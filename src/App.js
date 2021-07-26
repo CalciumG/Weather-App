@@ -62,7 +62,7 @@ function App() {
         typeof weather.main != "undefined"
           ? weather.main.temp > 18
             ? "app warm"
-            : "app"
+            : "app cool"
           : "app"
       }
     >
@@ -87,7 +87,7 @@ function App() {
             </div>
             <div className="weather-box">
               <div className="temp">{Math.round(weather.main.temp)}C</div>
-              <div className="weather">Sunny</div>
+              <div className="weather">{weather.weather[0].description}</div>
             </div>
           </div>
         ) : (

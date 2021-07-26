@@ -6,14 +6,22 @@
 }
 
 .app {
-  background-color: rgb(132, 230, 215);
+  background-image: url(./assets/EVvJpmgU8AAEq2q.jpg);
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease-out;
 }
 
 .app.warm {
-  background-color: rgb(255, 163, 163);
+  background-image: url(./assets/ANH-Tatooine-Sunset.jpg);
+}
+
+.app.cool {
+  background: url(./assets/ESB-Hoth-AT-AT.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 main {
