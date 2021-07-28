@@ -42,6 +42,9 @@ function ComponentWithGeolocation() {
       .then((res) => res.json())
       .then((result) => {
         fetchCity(result.data[0].locality);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
 
@@ -116,9 +119,9 @@ function ComponentWithGeolocation() {
         ) : (
           ""
         )}
-        <h1>{geolocation.latitude}</h1>
-        <h1>{geolocation.longitude}</h1>
-        <button onClick={getCity}>Here</button>
+        <button className="btn" onClick={getCity}>
+          Use Current Location
+        </button>
       </main>
     </div>
   );
