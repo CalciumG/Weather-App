@@ -119,9 +119,9 @@ function ComponentWithGeolocation() {
         ) : (
           ""
         )}
-        <button className="btn" onClick={getCity}>
+        {/* <button className="btn" onClick={getCity}>
           Use Current Location
-        </button>
+        </button> */}
       </main>
     </div>
   );
