@@ -35,18 +35,18 @@ function ComponentWithGeolocation() {
       });
   };
 
-  const getCity = () => {
-    fetch(
-      `${cityApi.base}access_key=${cityApi.key}&query=${geolocation.latitude},${geolocation.longitude}`
-    )
-      .then((res) => res.json())
-      .then((result) => {
-        fetchCity(result.data[0].locality);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  // const getCity = () => {
+  //   fetch(
+  //     `${cityApi.base}access_key=${cityApi.key}&query=${geolocation.latitude},${geolocation.longitude}`
+  //   )
+  //     .then((res) => res.json())
+  //     .then((result) => {
+  //       fetchCity(result.data[0].locality);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // };
 
   const dateBuilder = (d) => {
     let months = [
