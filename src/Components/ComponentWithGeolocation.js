@@ -14,7 +14,7 @@ const cityApi = {
 function ComponentWithGeolocation() {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState("");
-  const geolocation = useGeolocation();
+  // const geolocation = useGeolocation();
 
   const search = (evt) => {
     if (evt.key === "Enter") {
@@ -27,13 +27,13 @@ function ComponentWithGeolocation() {
     }
   };
 
-  const fetchCity = (city) => {
-    fetch(`${api.base}weather?q=${city}&units=metric&APPID=${api.key}`)
-      .then((res) => res.json())
-      .then((result) => {
-        setWeather(result);
-      });
-  };
+  // const fetchCity = (city) => {
+  //   fetch(`${api.base}weather?q=${city}&units=metric&APPID=${api.key}`)
+  //     .then((res) => res.json())
+  //     .then((result) => {
+  //       setWeather(result);
+  //     });
+  // };
 
   // const getCity = () => {
   //   fetch(
